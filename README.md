@@ -18,8 +18,8 @@ This is a screenshot of my solution.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Visit]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/responsive-order-summary-component-sass-and-a-proper-folder-structure-pyw9vIGP8s))
+- Live Site URL: [Visit]([https://your-live-site-url.com](https://zeinghra.github.io/order-summary-component-main/))
 
 ## My process
 

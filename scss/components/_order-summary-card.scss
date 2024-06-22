@@ -1,0 +1,89 @@
+@use './../abstracts/' as *;
+
+.order-summary-card {
+  max-width: 18.75rem;
+  @include flex(center, center, 1rem);
+  flex-direction: column;
+  background-color: $clr-neutral-300;
+
+  border-radius: 1rem;
+  overflow: hidden;
+
+  box-shadow: 0 12px 24px hsla(0, 0%, 0%, 0.1);
+
+  font-size: $fs-2;
+  @include sm {
+    max-width: 28.125rem;
+    font-size: $fs-3;
+  }
+
+  .card-content {
+    @include flex(center, stretch, 1rem);
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+
+    @include sm {
+      padding: 1rem 3rem 2rem;
+    }
+  }
+
+  .card-text-content {
+    @include flex(center, center, 1rem);
+    flex-direction: column;
+    text-align: center;
+    padding-inline: 0.5rem;
+
+    @include sm {
+      padding-inline: 1.75 rem;
+    }
+  }
+
+  h1 {
+    font-size: $fs-4;
+    font-weight: $fw-black;
+    color: $clr-neutral-100;
+
+    @include sm {
+      font-size: $fs-6;
+    }
+  }
+
+  .pay-btn {
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    background-color: $clr-accent;
+    color: $clr-neutral-300;
+    font-weight: $fw-bold;
+    margin-top: 0.75rem;
+    padding-block: 0.75rem;
+
+    border: none;
+    border-radius: 0.5rem;
+    transition: all 0.2s linear;
+
+    box-shadow: 0 12px 24px hsla(245, 75%, 52%, 0.3);
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .cancel-btn {
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: $clr-neutral-200;
+    font-weight: $fw-bold;
+    padding-block: 0.75rem;
+
+    border: none;
+    border-radius: 0.5rem;
+    transition: all 0.2s linear;
+
+    &:hover {
+      color: $clr-neutral-100;
+    }
+  }
+}

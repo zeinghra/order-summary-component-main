@@ -1,0 +1,39 @@
+@use './../abstracts' as *;
+
+.cart {
+  @include flex(center, stretch, 0.25rem);
+  flex-direction: column;
+
+  .item {
+    @include flex(space-between, center, 0);
+    background-color: $clr-cart-item;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    .item-content {
+      @include flex(center, stretch);
+
+      .item-description {
+        h2 {
+          color: $clr-neutral-100;
+          font-weight: $fw-black;
+        }
+      }
+    }
+
+    .change-item-button {
+      appearance: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      color: $clr-accent;
+      background-color: transparent;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+        opacity: 0.7;
+      }
+    }
+  }
+}
